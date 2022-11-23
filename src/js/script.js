@@ -7,17 +7,42 @@ $(document).ready(function(){
             prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.svg"></button>',
             nextArrow: '<button type="button" class="slick-next"><img src="icons/right.svg"></button>',
             responsive: [
-                {
-                    breakpoint: 992,
-                    settings: {
-                      dots: true,
-                      arrows: false
-                      
-                    }
-                  }
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  infinite: true,
+                  dots: true,
+                  arrows:false,
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow:1,
+                  slidesToScroll:1,
+                  arrows: false,
+                  dots: true
+
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll:1,
+                  arrows: false,
+                  dots: true
+                }
+              }
             ]
           }
+          
     );
+
+
+
     $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
       $(this)
         .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')

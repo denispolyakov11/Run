@@ -2,10 +2,13 @@
     padding-top: 108px;
     &__inner{
         position: relative;
-        width: 750px;
+        max-width: 750px;
         margin: 0 auto;
-        
+
+
     }
+
+
     .slick-prev {
         img{
             width: 30px;
