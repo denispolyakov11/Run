@@ -1,6 +1,7 @@
-
+@import'../base/animations';
 *{
     font-family: 'Museo Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .container{
@@ -21,4 +22,6 @@
 @import'../blocks/reviews';
 @import'../blocks/footer';
 @import'../blocks/modal';
+@import'../blocks/pageup';
+@import'../blocks/iframe';
 
